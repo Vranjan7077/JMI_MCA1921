@@ -1,0 +1,12 @@
+create table Emp_Data(Emp_No Number(5) Primary Key,EName varchar2(30) Not Null,Dept_No Varchar2(25),Job varchar2(10),Hiredate Date Default CURRENT_DATE);
+
+create table Dept(Dept_No Varchar2(25),DName varchar2(30) Not Null,Loc varchar2(30) Not Null);
+
+ALTER TABLE Dept ADD PRIMARY KEY (Dept_No);
+ALTER TABLE Emp_Data ADD FOREIGN KEY (Dept_No) REFERENCES Dept(Dept_No);
+
+insert into Emp_Data values(23455,'John','A2345','2J','20-05-2012');
+insert into Emp_Data(Emp_No,EName,Dept_No,Job) values(45675,'David','F3357','2D');
+insert into Emp_Data values(56783,'Steve','T5763','2S','23-07-2011');
+insert into Emp_Data(Emp_No,EName,Dept_No,Job) values(12467,'Smith','Y5637','7S');
+insert into Emp_Data values(99811,'Tony','A5436','2T','25-08-2009');

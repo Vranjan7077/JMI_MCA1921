@@ -1,0 +1,13 @@
+create table school(Roll_No Number(2),Name varchar2(30),Address Varchar2(6),Mobile_no number(10),Marks Number(3));
+1
+	insert into school values(12,'John','Delhi',7898568781,78);
+	insert into school values(18,'David','Delhi',7456678912,79);
+	insert into school values(11,'Steve','Goa',7889456789,89);
+	insert into school values(17,'Smith','UP',7778453412,67);
+	insert into school values(20,'Tony','Delhi',7899893456,43);
+2.
+	select * From school where Roll_No Between 20 and 30;
+3
+	select * from school order by Roll_No;
+4.
+	select Name,((marks/100)*100) as Percentage from school;

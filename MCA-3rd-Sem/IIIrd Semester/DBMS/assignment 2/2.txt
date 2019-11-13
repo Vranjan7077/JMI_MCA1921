@@ -1,0 +1,95 @@
+Create table Studies (PNAME  VARCHAR2(10),SPLACE VARCHAR2(10),COURSE VARCHAR2(10), COST NUMBER(6) ,
+FOREIGN KEY(PNAME) REFERENCES PROGRAMMER(PNAME));
+
+Create table Programmer(
+PNAME VARCHAR(10) PRIMARY KEY, DOB DATE, DOJ DATE, SEX CHAR(1), PROF1 VARCHAR2(10), PROF2 VARCHAR2(10), SAL NUMBER(7)
+);
+
+insert into studies values('Rakesh','Pentafour','PGDCA',12000);
+insert into studies values('Mariam','PRAGATHI','DCA','16000);
+insert into studies values('Vaishali','UP','MCA',14000);
+insert into studies values('Ankit','Rajasthan','Pharma',18000);
+insert into studies values('Sumit','Delhi','MBA',22000);
+
+insert into software values('Rakesh','Oracle',7000,4000,2);
+insert into software values('Mariam','C',2500,5000,3);
+insert into software values('Vaishali','VB',6500,3500,2);
+insert into software values('Ankit','Oracle',3000,7000,3);
+insert into software values('Sumit','Java',3200,6500,2);
+
+insert into programmer values('Rakesh','03-Apr-96','10-Nov-14','M','C','Oracle',6000);
+insert into programmer values('Mariam','30-Aug-97','02-Jan-18','F','Pascal','C',7000);
+insert into programmer values('Vaishali','18-Feb-95','24-Sep-16','F','VB','Pascal,7500);
+insert into programmer values('Ankit','10-Dec-93','13-Jan-13','M','VB','Oracle,14000);
+insert into programmer values('Sumit','06-Aug-98','19-Mar-15','M','C++','Java,18000);
+
+Select AVG(SOLD) from Software where DEVIN=’Oracle’; 
+Select ROUND(AVG(SOLD)) from Software where DEVIN=’Oracle’;
+
+Select pname, trunc((sysdate-DOB)/365.25) “Age”, trunc((sysdate-DOJ)/365.25)  “Experience” from programmer;
+
+Select pname from studies where course=’PGDCA’;
+
+Select max(sold) from software;
+
+Select pname from PROGRAMMER where dob like ‘%APR%’;
+Select pname from PROGRAMMER where to_char(DOB,’mm’)=04;
+
+Select min(ccost) “Lowest_course_fee” from studies;
+
+Select pname from studies where Course=’DCA’;
+
+Select SUM(SOLD*SCOST)“REVENUE_in_C” from software where DEVIN=’C’;
+
+Select * from software where pname=’Rakesh’;
+
+Select Count(*) “Programmers_Pentafour” from studies where splace=’Pentafour’;
+
+Select * from software where (SOLD*SCOST)>5000;
+
+Select Title,round(dcost/scost) “Copies” from software where (scost*sold)>dcost;
+
+Select * from software where (sold*scost)>=dcost;
+
+Select max(DCOST) from software where DEVIN=’VB’; 
+
+Select count(*) “Oracle_Package” from Software where Devin=’Oracle’;
+
+Select Count(*) “Programmers_Pragathi” from Studies where SPLACE=’PRAGATHI’; 
+
+Select Count(pname) from studies where CCOST between 10000 and 15000; 
+
+Select avg(CCOST) from Studies;
+
+Select * from Programmer where Prof1=’C’ or Prof2=’C’;
+
+Select Count(*) from Programmer where Prof1 IN(‘C’,’Pascal’) or Prof2 IN(‘C’,’Pascal’);
+
+Select Count(*) from Programmer where Prof1 NOT IN(‘C’,’C++’) and Prof2 NOT IN(‘C’,’C++’);
+
+Select max(trunc((sysdate-DOB)/365.25)) from Programmer where SEX=’M’; 
+
+Select avg(trunc((sysdate-DOB)/365.25)) from Programmer where SEX=’F’;
+
+Select pname,trunc((sysdate-DOJ)/365.25) “Experience” from Programmer order by trunc((sysdate-DOJ)/365.25); 
+
+Select pname from Programmer where to_char(SYSDATE,’mm’)= to_char(DOB,’mm’);
+
+Select Count(*) from Programmer where SEX=’F’;
+
+Select distinct(Prof1) from Programmer where SEX=’M’ UNION Select distinct(Prof2) from Programmer where SEX=’M’; 
+
+Select max(SAL) from Programmer;
+
+Select Count(*) from Programmer where SAL BETWEEN 5000 and 7500;
+
+
+Select * from Programmer where Prof1 NOT IN(‘C’,’C++’,’Pascal’) and Prof2 NOT IN(‘C’,’C++’,’Pascal’);
+
+
+Select PNAME,max(SCOST) from Software GROUP BY PNAME;
+
+Programmer
+      Mr. Arvind – has 15 years of experience
+Select concat('Miss ',concat (Pname,concat(' has ',concat(trunc((sysdate-DOJ)/365.25),' years of Experience')))) "Experience" from Programmer where SEX='F' UNION Select concat('Mr ',concat (Pname,concat(' has ',concat(trunc((sysdate-DOJ)/365.25),' years of Experience')))) "Experience"  from Programmer where SEX='M' ;
+

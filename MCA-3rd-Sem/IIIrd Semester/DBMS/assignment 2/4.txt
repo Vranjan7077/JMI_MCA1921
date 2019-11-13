@@ -1,0 +1,36 @@
+Create table Customers(
+CNum Number(4), CName varchar2(7), City Varchar2(6),Rating Number(4),SNum Number(4) 
+);
+Insert into Customers values(2001,'Harsh','London',100,1001);
+Insert into Customers values(2002,'Gita','Rome',200,1003);
+Insert into Customers values(2003,'Lalit','Surat',200,1002);
+Insert into Customers values(2004,'Govind','Bombay',300,1002);
+Insert into Customers values(2006,'Chirag','London',100,1001);
+Insert into Customers values(2008,'Chinmay','Surat',300,1007);
+Insert into Customers values(2007,'Pratik','Rome',100,1004);
+
+Create table orders(
+ONum Number(4), Amount Number(6,2),ODate date, CNum Number(4),SNum  Number(4)
+);
+
+Insert into Orders values(3001,0018.69,'03-Oct-97',2008,1007);
+Insert into Orders values(3003,0767.19,'03-Oct-97',2001,1001);
+Insert into Orders values(3005,5160.45,'03-Oct-97',2003,1002);
+Insert into Orders values(3006,1098.16,'03-Oct-97',2008,1007);
+Insert into Orders values(3009,1713.23,'04-Oct-97',2002,1003);
+Insert into Orders values(3007,0075.75,'04-Oct-97',2004,1002);
+Insert into Orders values(3008,4723.00,'05-Oct-97',2006,1001);
+Insert into Orders values(3010,1309.95,'06-Oct-97',2004,1002);
+Insert into Orders values(3011,9891.88,'06-Oct-97',2006,1001);
+
+select snum,max(amount) from orders group by snum having snum=1002 or snum=1007;
+select count(*) from orders where odate='03-Oct-97';
+select sum(amount)"Total" from orders;
+select avg(amount)"Average" from orders;
+select count(distinct(snum)) from orders;
+select snum,odate,max(amount) from orders group by odate,snum order by odate;
+select snum,max(amount) from orders where odate='03-Oct-97' group by snum;
+select count(distinct(city)) from customers where city is not null;
+select cnum,min(amount) "Minimum_Amount" from orders group by cnum;
+select cname from customers where cname like 'G%' and rownum<=1 order by cname;
+select odate,count(*) “No_of_salesman” from orders group by odate;

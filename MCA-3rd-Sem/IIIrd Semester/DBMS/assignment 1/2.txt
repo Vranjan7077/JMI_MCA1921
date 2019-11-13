@@ -1,0 +1,16 @@
+create table Friend(Name varchar2(15),Address Varchar2(30),Mobile_no number(10),Highest_degree varchar2(6),Marks Number(3));
+1
+	insert into Friend values('John','14A,Lodhi Road,Delhi',7898568781,'MBA',78);
+	insert into Friend values('David','X-5,Sector-5 Rohini,Delhi',7456678912,'M.Sc.',79);
+	insert into Friend values('Steve','34-B,Block-E Dwarka,Delhi',7889456789,'MCA',89);
+	insert into Friend values('Smith','X-5,Sector-5 Rohini,Delhi',7778453412,'B.Com',67);
+	insert into Friend values('Tony','37-B,Block-E Dwarka,Delhi',7899893456,'MBA',43);
+	insert into Friend values('Philips','37-B,Block-E Dwarka,Delhi',7899893456,'MBA',43);
+2
+	select Name,Highest_degree,Marks from Friend;
+3.
+	select * from Friend Order by Name;
+4.
+	delete from Friend where Name like'P%';
+5.
+	select Name from Friend Order by Marks desc;

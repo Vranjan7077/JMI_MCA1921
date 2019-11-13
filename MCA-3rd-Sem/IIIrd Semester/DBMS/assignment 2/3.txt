@@ -1,0 +1,36 @@
+Create Table Dept2(
+DEPTNO NUMBER(2) PRIMARY KEY, DNAME VARCHAR2(14),LOC VARCHAR2(13)
+);
+Create table Emp2(
+EmpNo Number(4) NOT NULL,Ename Varchar2(10), Job Varchar2(9), MGR Number(4), Hiredate date, Sal Number(7,2), Comm Number(7,2), DeptNo Number(2),
+FOREIGN KEY(DeptNo) REFERENCES Dept2(DeptNo)
+);
+
+Select ename from emp2 where empno IN(Select mgr from emp2 where mgr is not null);
+//select ename from emp2 a where (select mgr from emp2 where a.mgr=empno);
+//Select mgr,count(*) from Emp2 group by MGR having Count(mgr)>=1;
+
+Select * from Dept2 where deptno=’10’ Group by DeptNo Having COUNT(Dname)>10;
+
+select ename,(Select ename from emp2 f where e.mgr=f.empno)"Manager" from emp2 e;
+//Select emp2.Ename,(Select emp2.ename from emp2 where emp2.deptno=emp2.mgr) from Emp2,dept2 where dept2.deptno=emp2.deptno;
+
+select * from emp2 where empno NOT IN(select mgr from emp2 where mgr is not null);
+Select * from EMP2 where sal>(select min(sal) from EMP2 group by deptno having deptno=’20’);
+Select * from EMP2 where sal>(select max(sal) from EMP2 where job=’Manager’);
+Select job,max(sal) from EMP2 group by job; 
+Select  ename,min(trunc((sysdate-Hiredate)/365.25))”Experience” from emp2  group by deptno,ename;
+Select to_char(HIREDATE,’yyyy’) from emp2 where rownum<=1 group by to_char(HIREDATE,’yyyy’) order by count(*);
+Select max(count(*)) from emp2 group by to_char(HIREDATE,’yyyy’) ;
+Select to_char(HIREDATE,’yyyy’)"YEAR",max(count(*)) "Employees" from emp2  group by to_char(HIREDATE,’yyyy’) ;
+SELECT deptno,MAX(Sal+(Sal*(Comm/100))) from Emp2 group by deptno;
+
+select lpad(Empno,3,'*')"Empno",ename,job,mgr,hiredate,sal,comm,deptno from emp2 where hiredate=(Select max(hiredate) from emp2) union select Lpad(Empno,3,' ') "Empno",ename,job,mgr,hiredate,sal,comm,deptno from emp2 where hiredate<(Select max(hiredate) from emp2);
+//select  concat(‘*’,concat(EmpNo,concat(Ename,concat(Job,concat(MGR,concat(Hiredate,concat(Sal,concat(Comm,DeptNo)))))))) from dept2 where hiredate=min(trunc((sysdate-Hiredate)/365.25));  
+select ename,sal,deptno from emp2 e where sal>(Select avg(sal) from emp2 f where e.deptno=f.deptno);
+SELECT MAX(Sal+(Sal*(Comm/100)))”Maximum Salary” from Emp2;
+Select  EmpNo,Ename,count(*) from emp2 group by empno,ename having Count(*)>1;
+
+Select ename,trunc((sysdate-hiredate)/365.25) "Year", trunc(mod(months_between(sysdate,HIREDATE),12))"Month" from emp2;
+//Select to_char(SYSDATE-HIREDATE,’mm-yyyy’) from emp2;
+

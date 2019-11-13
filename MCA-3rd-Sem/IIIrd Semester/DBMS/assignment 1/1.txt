@@ -1,0 +1,14 @@
+create table Department(Department_Id number(4),Dept_Name Varchar2(20),Manager_Id number(4),Manager_Name varchar2(20),Location_Id Number(4));
+
+1.
+	insert into Department values(2345,'Accounts',7898,'John',4567);
+	insert into Department values(2456,'Marketing',7456,'David',4793);
+	insert into Department values(2568,'HR',7889,'Steve',4589);
+	insert into Department values(2789,'Accounts',7778,'Smith',4457);
+	insert into Department values(2024,'IT',7899,'Tony',4436);
+2.
+	select Department_Id,Dept_Name from Department;
+3
+	select Dept_Name,Manager_Name from Department;
+4.
+	delete from Department;

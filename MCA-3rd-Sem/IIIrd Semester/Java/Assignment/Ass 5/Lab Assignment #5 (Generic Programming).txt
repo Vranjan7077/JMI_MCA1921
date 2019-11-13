@@ -1,0 +1,9 @@
+Define a generic java class Matrix which resembles a 2D array of matrix of size mxn. The dimension of the matrix (m,n) can be taken as a constructor argument. The matrix class has a method called populateData() which generates the random values between a range and store it to the matrix. This class also overrides the toString() method so that matrix objects can be directly printed using System.out.println(). Create 20 objects of the matrix class and store it to an array list. Test your program for integer numbers as well as complex numbers.
+[Hints: You need to define a class for complex numbers. The Matrix objects may be created as follows:
+
+Matrix <Integer> m1 = new Matrix <Integer> (5, 6);
+Matrix <Complex> M1 = new Matrix <Complex> (4, 6);
+m1.populateData();
+M2.populateData();
+....
+]

@@ -1,0 +1,3 @@
+The k-mer refers to all the possible substrings of length k that are contained in a string. In genomics, k-mers refer to all the possible subsequences (of length k) in a given DNA Sequence. The number of possible k-mers given n possibilities (n=4 in the case of DNA e.g. ACTG) is n^k. For example, if k=1, there are 4 k-mers possible (i.e. A, C, T, G), in case of k=2, 16 k-mers are possible (e.g. AA AT AC AG TA TT TC TG CA CT CC CG GA GT GC GG). Write a program which takes a DNA sequence file and value of k as input from the user, and calcualte the occurce of k-mers, and store it to a CSV file. [For example, if given DNA sequence S=ATTGCCC, k=2, then output should be as follows:
+AA AT AC AG TA TT TC TG CA CT CC CG GA GT GC GG
+0 1 0 0 0 1 0 1 0 0 2 0 0 0 1 0

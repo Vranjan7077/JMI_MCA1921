@@ -1,0 +1,5 @@
+Given a string, find all distinct palindromic sub-strings of length>1. 
+For example, str = "abaaa" then possible palindromic sub-strings are: aa, aaa, aba. 
+Write an interactive Java Program which takes a long string as input and 
+display all distinct palindromic substrings of length > 1. 
+If students are highly motivated, they can write a GUI-based Java applications.

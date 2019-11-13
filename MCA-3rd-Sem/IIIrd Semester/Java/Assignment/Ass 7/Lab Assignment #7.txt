@@ -1,0 +1,1 @@
+Write multithreaded Java application for finding all the possible numbers of palindromes of size at least 3 in the given long string of DNA sequence. Take sequence input through file and store palindromes in a text file. Do you find multithreaded applications better than single threaded?

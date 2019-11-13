@@ -1,0 +1,14 @@
+create table karamchari(Emp_Id Number(5),Name varchar2(30),Email Varchar2(25),Mobile_no number(10),Job_Id varchar2(10),Salary Number(8,2));
+1
+	insert into karamchari values(23455,'John','john23@gmail.com',7898568781,'12J34',50000);
+	insert into karamchari values(45671,'David','david@gmail.com',7456678912,'12D67',79000);
+	insert into karamchari values(56783,'Steve','steve545@gmail.com',7889456789,'12S67',89000);
+	insert into karamchari values(12467,'Smith','smith45@gmail.com',7778453412,'12S44',67000);
+	insert into karamchari values(99811,'Tony','tony@gmail.com',7899893456,'12T78',43000);
+2.
+	select * from karamchari;
+3.
+	update karamchari Set Salary=(salary+(salary*0.20)) where Name='Tony';
+4.
+	delete from karamchari;
+	

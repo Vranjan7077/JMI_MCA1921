@@ -1,0 +1,1 @@
+Write a multithreaded Java application to demonstrate synchronization in a Reader-Writer problem for a shared limited buffer.

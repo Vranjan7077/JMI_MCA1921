@@ -1,0 +1,33 @@
+Create table Empl1
+	(
+	ENAME varchar2(10),DEPT_NAME varchar2(10),DESIGNATION varchar2(10),SALARY NUMBER(10),DATE_OF_JOIN date
+	);
+
+Insert into Empl1 values('KARAN','ACCOUNTING','DIRECTOR',50000,'17-Nov-12');
+Insert into Empl1 values('FARAH','RESEARCH','ANALYST',30000,'03-Dec-91');
+Insert into Empl1 values('SCINDIA','RESEARCH','ANALYST',30000,'09-Dec-12');
+Insert into Empl1 values('JOY','RESEARCH','MANAGER',29750,'02-Apr-11');
+Insert into Empl1 values('BHASKAR','SALES','MANAGER',28500,'01-May-99');
+Insert into Empl1 values('CHANDER','ACCOUNTING','MANAGER',24500,'09-June-00');
+Insert into Empl1 values('ANIL','SALES','SALESMAN',16000,'20-Feb-91');
+Insert into Empl1 values('TOMAR','SALES','SALESMAN',15000,'08-Sep-01');
+Insert into Empl1 values('MILIND','ACCOUNTING','CLERK',13000,'23-Jan-02');
+Insert into Empl1 values('SAXENA','SALES','SALESMAN',12500,'28-Sep-99');
+Insert into Empl1 values('TOMAR','SALES','SALESMAN',14500,'22-Feb-97');
+Insert into Empl1 values('ANAND','RESEARCH','CLERK',11000,'12-Jan-93');
+Insert into Empl1 values('GEORGE','SALES','CLERK',9500,'03-Dec-90');
+Insert into Empl1 values('SURESH','RESEARCH','CLERK',8000,'17-Dec-92');
+
+Select ename  from empl1 where salary<20000;
+Select * from Empl1 where dept_name=’SALES’ and designation=’MANAGER’;
+Select * from Empl1 where ename like ‘S%’;
+Select * from Empl1 where dept_name=’RESEARCH’;
+Select * from Empl1 where date_of_join>01-Jan-10;
+Select count(Ename)  from empl1 where salary between 8000 and 12500;
+Select * from Empl1 order  by ename;
+Select * from Empl1 where designation=”SALESMAN” and date_of_join>’01-Aug-90’;
+Select * from Empl1 where designation=’CLERK’;
+Select Count(Ename) “Count_of_salesman” from Empl1 where designation =’SALESMAN’ and dept_name=’SALES’;
+Select Count(ename) “Count_emp” from Empl1 ;
+Select * from Empl1 where date_of_join between ’01-Jan-97’ and ’31-Dec-10’;
+Select * from Empl1 order by salary DESC;
