@@ -1,0 +1,8 @@
+<!ELEMENT record (student+)>
+<!ELEMENT student (name,course,semester,state,email,mobile)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT course (#PCDATA)>
+<!ELEMENT semester (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT mobile (#PCDATA)>

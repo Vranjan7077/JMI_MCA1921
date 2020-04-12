@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Configuration>
+	<Driver>net.ucanaccess.jdbc.UcanaccessDriver</Driver>
+	
+	<URL>jdbc:ucanaccess://C:/Users/Sanjeev biswas/Documents/XE.accdb</URL>
+	
+	<username> </username>
+	
+	<password> </password>
+</Configuration>

@@ -1,0 +1,21 @@
+Conversion of XML to CSV 
+
+Root Node Name= (record)
+
+Node Name = (student)
+Node Name = (name)		Node Value = (Sanjeev Kumar)
+Node Name = (course)		Node Value = (MCA)
+Node Name = (semester)		Node Value = (4th)
+Node Name = (state)		Node Value = (Uttar Pradesh)
+Node Name = (email)		Node Value = (sanjeevbiswas.10@gmail.com)
+Node Name = (mobile)		Node Value = (9598341156)
+
+Node Name = (student)
+Node Name = (name)		Node Value = (Ranit Biswas)
+Node Name = (course)		Node Value = (MCA)
+Node Name = (semester)		Node Value = (4th)
+Node Name = (state)		Node Value = (Delhi)
+Node Name = (email)		Node Value = (ranit.vishwas@gmail.com)
+Node Name = (mobile)		Node Value = (8400004520)
+
+

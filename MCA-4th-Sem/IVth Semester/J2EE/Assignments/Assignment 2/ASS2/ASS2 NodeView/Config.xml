@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!DOCTYPE record SYSTEM "rec.dtd">
+
+<record>
+	<student>
+		<name>Sanjeev Kumar</name>
+		<course>MCA</course>
+		<semester>4th</semester>
+		<state>Uttar Pradesh</state>
+		<email>sanjeevbiswas.10@gmail.com</email>
+		<mobile>9598341156</mobile>
+	</student>
+	<student>
+		<name>Ranit Biswas</name>
+		<course>MCA</course>
+		<semester>4th</semester>
+		<state>Delhi</state>
+		<email>ranit.vishwas@gmail.com</email>
+		<mobile>8400004520</mobile>
+	</student>
+</record>

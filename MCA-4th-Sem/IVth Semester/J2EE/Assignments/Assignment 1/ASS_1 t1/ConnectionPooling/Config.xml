@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Configuration>
+	<Driver>oracle.jdbc.driver.OracleDriver</Driver>
+	
+	<URL>jdbc:oracle:thin:@localhost:1521:XE</URL>
+	
+	<username>system</username>
+	
+	<password>system</password>
+</Configuration>
