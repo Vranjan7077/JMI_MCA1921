@@ -7,7 +7,7 @@ This repository contains the data of the various semester's throughout the journ
 ### Semester 1 
 
 It includes the assignments of :
-####⋅⋅* C language 
+####⋅⋅*C language 
 ----------------------------------------------------------------------------------------------------------------------
 ### Semester 2 
 It includes the assignments of :
