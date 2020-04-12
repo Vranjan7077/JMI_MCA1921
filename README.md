@@ -24,6 +24,8 @@ It includes the assignments of :
 
 [logo]: https://user-images.githubusercontent.com/36437758/79072201-59992400-7cfd-11ea-990a-f1ec1e6359d8.png
 -----------------------------------------------------------------------------------------------------
+
+### Semester 4
 It includes the assignments of :
 #### Artificial Intelligence
 #### BigData
