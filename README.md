@@ -17,13 +17,6 @@ It includes the assignments of :
 ### Semester 2 
 It includes the assignments of :
 #### C++ language 
-
-![c++][logo]
-
-[logo]: (https://user-images.githubusercontent.com/36437758/79072474-d5e03700-7cfe-11ea-92a4-64da186c83a8.png)
-
-
-
 #### Data Structures language 
 #### Microprocessor 8086
 #### Operating System 
