@@ -17,7 +17,7 @@ It includes the assignments of :
 ### Semester 2 
 It includes the assignments of :
 #### C++ language 
-![C++](https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FC%252B%252B&psig=AOvVaw0LK1hfN3tI0fnka54KTMvX&ust=1586792882144000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNC1waWe4-gCFQAAAAAdAAAAABAD)
+![C++]()
 #### Data Structures language 
 #### Microprocessor 8086
 #### Operating System 
