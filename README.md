@@ -6,14 +6,26 @@ This repository contains the data of the various semester's throughout the journ
 ----------------------------------------------------------------------------------------------------------------------
 ### Semester 1 
 
-It includes the assignments of 
+It includes the assignments of :
 #### C language 
 ----------------------------------------------------------------------------------------------------------------------
 ### Semester 2 
+It includes the assignments of :
+#### C++ language 
+#### Data Structures language 
+#### Microprocessor 8086
+#### Operating System 
 ----------------------------------------------------------------------------------------------------------------------
 ### Semester 3
+It includes the assignments of :
+#### Data Base Management System
+#### Core Java
 ----------------------------------------------------------------------------------------------------------------------
 ### Semester 4
+It includes the assignments of :
+#### AI
+#### BigData
+#### Cryptography
 ----------------------------------------------------------------------------------------------------------------------
 ### Semester 5
 ----------------------------------------------------------------------------------------------------------------------
