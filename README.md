@@ -18,7 +18,8 @@ It includes the assignments of :
 It includes the assignments of :
 #### C++ language 
 ![C++](https://github.com/Vranjan7077/logos/blob/master/Cpp.png?raw=true)
-#### Data Structures language 
+#### Data Structures language
+![Data Structures](https://github.com/Vranjan7077/logos/blob/master/ds.png?raw=true)
 #### Microprocessor 8086
 #### Operating System 
 -----------------------------------------------------------------------------------------------------
@@ -26,12 +27,16 @@ It includes the assignments of :
 It includes the assignments of :
 #### Data Base Management System
 #### Core Java
+![Core Java](https://github.com/Vranjan7077/logos/blob/master/cjava.jpg?raw=true)
 -----------------------------------------------------------------------------------------------------
 ### Semester 4
 It includes the assignments of :
 #### Artificial Intelligence
+![AI](https://github.com/Vranjan7077/logos/blob/master/ai.jpg?raw=true)
 #### BigData
+![BigData](https://github.com/Vranjan7077/logos/blob/master/bigdata.jpg?raw=true)
 #### Cryptography
+![Crypto](https://github.com/Vranjan7077/logos/blob/master/crypto.jpg?raw=true)
 ----------------------------------------------------------------------------------------------------
 ### Semester 5
 ----------------------------------------------------------------------------------------------------------------------
