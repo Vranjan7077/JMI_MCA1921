@@ -17,7 +17,7 @@ It includes the assignments of :
 ### Semester 2 
 It includes the assignments of :
 #### C++ language 
-![C++]()
+![C++](https://github.com/Vranjan7077/logos/blob/master/Cpp.png?raw=true)
 #### Data Structures language 
 #### Microprocessor 8086
 #### Operating System 
